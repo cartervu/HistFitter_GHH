@@ -40,7 +40,7 @@ nbkg      =  5.	 	# Number of predicted bkg events
 nsig      =  5.  	# Number of predicted signal events
 nbkgErr   =  1.  	# (Absolute) Statistical error on bkg estimate
 nsigErr   =  2.  	# (Absolute) Statistical error on signal estimate
-lumiError = 0.039 	# Relative luminosity uncertainty
+lumiError = 0.5 	# Relative luminosity uncertainty
 
 # Set uncorrelated systematics for bkg and signal (1 +- relative uncertainties)
 ucb = Systematic("ucb", configMgr.weights, 1.2,0.8, "user","userOverallSys")
@@ -67,7 +67,7 @@ configMgr.writeXML = False
 configMgr.keepSignalRegionType = True
 
 # Give the analysis a name
-configMgr.analysisName = "MyUserAnalysis"
+configMgr.analysisName = "MyUserAnalysis_Lumi10_lumiunc05"
 configMgr.outputFileName = "results/%s_Output.root"%configMgr.analysisName
 
 # Define cuts
@@ -103,7 +103,7 @@ ana.addSamples([bkgSample,sigSample,dataSample])
 ana.setSignalSample(sigSample)
 
 # Define measurement
-meas = ana.addMeasurement(name="NormalMeasurement",lumi=1.0,lumiErr=lumiError)
+meas = ana.addMeasurement(name="NormalMeasurement",lumi=10.0,lumiErr=lumiError)
 meas.addPOI("mu_Sig")
 #meas.addParamSetting("Lumi",True,1)
 

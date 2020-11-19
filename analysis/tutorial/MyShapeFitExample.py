@@ -173,8 +173,8 @@ if myFitType==FitType.Exclusion:
 
        # Channel
        srBin = exclusionFitConfig.addChannel("met/meff2Jet",["SR"],6,0.1,0.7)
-       srBin.useOverflowBin=True
-       srBin.useUnderflowBin=True
+       #srBin.useOverflowBin=True
+       #srBin.useUnderflowBin=True
        exclusionFitConfig.addSignalChannels([srBin])
 
        sigSample = Sample(sig,kPink)
