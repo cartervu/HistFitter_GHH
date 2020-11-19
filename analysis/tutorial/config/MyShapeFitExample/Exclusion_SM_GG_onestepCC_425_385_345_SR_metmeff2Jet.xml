@@ -1,0 +1,9 @@
+<!DOCTYPE Channel SYSTEM '../HistFactorySchema.dtd'>
+
+<Channel Name="SR_metmeff2Jet">
+
+  <Data HistoName="hData_SR_obs_metmeff2Jet" InputFile="data/MyShapeFitExample.root" />
+
+  <StatErrorConfig RelErrorThreshold="0" ConstraintType="Gaussian"/>
+
+</Channel>

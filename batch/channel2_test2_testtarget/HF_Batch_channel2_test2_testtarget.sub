@@ -1,0 +1,8 @@
+executable	= /afs/cern.ch/user/c/cvu/HistFitterTutorial/batch/channel2_test2_testtarget/HF_Batch_channel2_test2_testtarget.sh
+arguments	= $(ClusterId) $(ProcId)
+output		= /afs/cern.ch/user/c/cvu/HistFitterTutorial/batch/channel2_test2_testtarget/HF_Batch_channel2_test2_testtarget.out
+error		= /afs/cern.ch/user/c/cvu/HistFitterTutorial/batch/channel2_test2_testtarget/HF_Batch_channel2_test2_testtarget.err
+log		= /afs/cern.ch/user/c/cvu/HistFitterTutorial/batch/channel2_test2_testtarget/HF_Batch_channel2_test2_testtarget.log
++JobFlavour	= "tomorrow"
+
+queue

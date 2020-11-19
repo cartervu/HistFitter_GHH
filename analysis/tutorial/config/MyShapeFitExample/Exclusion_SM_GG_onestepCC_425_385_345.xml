@@ -1,0 +1,11 @@
+<!DOCTYPE Combination  SYSTEM '../HistFactorySchema.dtd'>
+
+<Combination OutputFilePrefix="./results/MyShapeFitExample/Exclusion_SM_GG_onestepCC_425_385_345"  >
+
+  <Input>config/MyShapeFitExample/Exclusion_SM_GG_onestepCC_425_385_345_SR_metmeff2Jet.xml</Input>
+
+  <Measurement Name="NormalMeasurement" Lumi="1" LumiRelErr="0.039" BinLow="0" BinHigh="50" ExportOnly="True">
+    <POI>mu_SIG</POI>
+  </Measurement>
+
+</Combination>

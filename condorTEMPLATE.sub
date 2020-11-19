@@ -1,0 +1,8 @@
+executable	= @SCRIPT@
+arguments	= $(ClusterId) $(ProcId)
+output		= @STDOUT@
+error		= @STDOUTERR@
+log		= @LOG@
++JobFlavour	= "tomorrow"
+
+queue
